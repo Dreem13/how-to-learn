@@ -28,6 +28,7 @@ p {
   max-height: 756px;
   background-color: #f2f2f2;
   padding-left: 64px;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -63,12 +64,18 @@ p {
   left: 64px;
   width: 388px;  
   z-index: 2;
+
 }
 
 .header_subtitle p {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+}
+
+.header_subtitle a {
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 .main-illustration {
@@ -240,7 +247,8 @@ p {
     margin-right: 48px;    
   }
 
-  .feynman_link p {
+  .feynman_link a {
+    text-decoration: none;
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
