@@ -285,6 +285,8 @@ p {
     width: 877px;
     height: 877px;
     z-index: 0;
+    background-image: url(/images/kaufman-triangle.svg);
+    background-size: cover;
   }
 
   .section-title__theme_dark {
