@@ -10,6 +10,16 @@
   color: #000000;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   position: relative;
@@ -27,26 +37,26 @@
   height: 32px;
 }
 
-.header__logo {
+.header_logo {
   position: absolute;
   top: 30px;
   z-index: 2;  
 }
 
-.header__title {
+.header_title {
   display: flex;
   align-items: center;
   width: 730px;  
   z-index: 2;  
 }
 
-.header__title h1 {
+.header_title h1 {
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
 }
 
-.header__subtitle {
+.header_subtitle {
   display: inline-block;
   position: absolute;
   bottom: 30px;
@@ -55,7 +65,7 @@
   z-index: 2;
 }
 
-.header__subtitle p {
+.header_subtitle p {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -77,20 +87,6 @@
   height: 568px;
   top: 64px;
   right: 0;
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
 }
 
 .description {
@@ -139,6 +135,8 @@
 .two-columns_span-accent p {
   line-height: 34px;
   font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   }
 
   .digits {
@@ -217,7 +215,7 @@
     z-index: 1;   
   }
 
-  .feynman_title h4 {
+  .feynman_title h2 {
     line-height: 1.15;
     font-size: 120px;
     font-weight: bold;
@@ -229,7 +227,7 @@
     z-index: 1;
   }
 
-  .feynman_subtitle h5 {
+  .feynman_subtitle h3 {
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
@@ -313,64 +311,78 @@
  }
 
  .table__theme_dark {
-   padding-bottom: 90px;
+  padding-bottom: 90px;
  }
 
  .table__theme_dark {
-   z-index: 1;
+  z-index: 1;
  }
 
  .table_heading__theme_dark h4 {
-   line-height: 1.15;
-   font-size: 24px;
-   font-weight: bold;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
  }
 
  .table_text__theme_dark p {
-   line-height: 1.2;
-   font-size: 18px;
-   font-weight: normal;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
  }
 
  .footer {
-   min-height: 350px;
-   background-color: #1f1f1f;
-   padding-top: 60px;
-   padding-bottom: 40px;
-   
+  min-height: 350px;
+  background-color: #1f1f1f;
+  padding-top: 60px;
+  padding-bottom: 40px;   
  }
 
  .footer_columns {
-   width: 90%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   color: white;  
- }
-
- .footer_column {
-
- }
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0 auto;
+  }
 
  .footer_column__content_copyright {
-   display: flex;
-   flex-basis: 710px;
-   justify-content: space-between;
-   flex-direction: column;
-
+  display: flex;
+  flex-basis: 711px;
+  justify-content: space-between;
+  flex-direction: column;
  }
 
  .footer_logo {
-   height: 35px;
+  height: 35px;
  }
 
  .footer_author {
-   margin-top: 18px;
-   margin-bottom: 18px;
-   color: white;
+  margin-top: 18px;
+  margin-bottom: 18px;   
  }
 
- .footer_author p {
-   color: white;
+ .footer_column-heading__info {
+  margin-bottom: 20px;
+ }
 
+ .footer_column-heading__info h4 {
+   margin: 0;
+   padding: 0;
+ }
+
+ .footer_column-heading__social {
+  margin-bottom: 20px;
+ }
+
+ .footer_column-heading__social h4 {
+   margin: 0;
+   padding: 0;
+ }
+
+ .footer_column-links {
+  margin-bottom: 16px;
+ }
+
+ .footer_column-links img {
+  margin-right: 10px;
  }
